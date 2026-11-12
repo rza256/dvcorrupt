@@ -8,6 +8,8 @@ and the deck conceals them using the real IEC 61834 macroblock shuffle.
   and export for MiniDV `.avi`, P2 HVX200 `.mxf` (cropped to 4:3) and deinterlaced `.mp4`.
 * [`DvCorruptOFX/`](DvCorruptOFX/README.md): the same engine as an OpenFX video effect for VEGAS Pro.
 
+Pre-built Windows binaries are on the [Releases](https://github.com/rza256/dvcorrupt/releases) page.
+
 The OpenFX headers are a git submodule. Clone with `git clone --recursive`, or run
 `git submodule update --init` after cloning.
 

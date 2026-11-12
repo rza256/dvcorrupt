@@ -3,10 +3,11 @@
 param([switch]$Uninstall)
 
 $ErrorActionPreference = 'Stop'
-$src  = Join-Path $PSScriptRoot 'build\DvCorrupt.ofx.bundle'
+$src  = Join-Path $PSScriptRoot 'DvCorrupt.ofx.bundle'                      # release zip layout
+if (-not (Test-Path $src)) { $src = Join-Path $PSScriptRoot 'build\DvCorrupt.ofx.bundle' }  # source tree
 $root = Join-Path $env:CommonProgramFiles 'OFX\Plugins'
 $dst  = Join-Path $root 'DvCorrupt.ofx.bundle'
-$log  = Join-Path $PSScriptRoot 'build\install.log'
+$log  = Join-Path $env:TEMP 'DvCorrupt-install.log'
 
 $admin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)

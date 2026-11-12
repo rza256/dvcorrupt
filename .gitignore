@@ -20,3 +20,4 @@ DvCorruptOFX/build/
 *.exp
 *.pdb
 .vs/
+release/
