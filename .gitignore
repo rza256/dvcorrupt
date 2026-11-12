@@ -1,0 +1,23 @@
+# source footage / reference material (large, personal, or third-party copyrighted)
+*.avi
+*.AVI
+*.mxf
+*.MXF
+*.mp4
+*.MP4
+*.mov
+*.sfk
+*.sfl
+*.pdf
+
+# build output
+DvCorrupt/bin/
+DvCorrupt/obj/
+DvCorruptOFX/build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+.vs/
